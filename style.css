@@ -1,0 +1,81 @@
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Outfit 300";
+    src: url(./font/Outfit-Light.ttf);
+}
+
+@font-face {
+    font-family: "Outfit 400";
+    src: url(./font/Outfit-Regular.ttf);
+}
+@font-face {
+    font-family: "Outfit 600";
+    src: url(./font/Outfit-SemiBold.ttf);
+}
+
+body {
+    background-color: var(--mainBG);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: "Outfit 300";
+}
+
+main {
+    background-color: var(--cardBG);
+    padding: 1.3em;
+    border-radius: 3%;
+    max-width: 19.4em;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 3%;
+}
+
+h1 {
+    color: var(--white);
+    font-family: "Outfit 600";
+}
+
+p {
+    color: var(--softBlue);
+}
+
+.cript {
+    color: var(--cyan);
+    font-family: "Outfit 400";
+}
+
+.time {
+    color: var(--softBlue);
+    text-align: right;
+}
+
+.sign {
+    color: var(--softBlue);
+}
+
+footer { 
+    font-size: 11px; text-align: center; 
+    color: var(--softBlue);
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
