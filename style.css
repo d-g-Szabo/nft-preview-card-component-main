@@ -48,6 +48,12 @@ img {
     border-radius: 3%;
 }
 
+.avatar {
+    border-style:solid;
+    color:var(--white);
+    border-radius: 100%;
+}
+
 h1 {
     color: var(--white);
     font-family: "Outfit 600";
