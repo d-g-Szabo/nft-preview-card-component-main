@@ -8,7 +8,7 @@
 }
 
 * {
-    margin: 0;
+    /*margin: 0;*/
     padding: 0;
     box-sizing: border-box;
 }
@@ -41,6 +41,7 @@ main {
     padding: 1.3em;
     border-radius: 3%;
     max-width: 19.4em;
+    box-shadow: 0px 25px 80px #0a0a0a8c;
 }
 
 img {
@@ -52,6 +53,8 @@ img {
     border-style:solid;
     color:var(--white);
     border-radius: 100%;
+    width: 12%;
+    object-fit: contain;
 }
 
 h1 {
