@@ -71,13 +71,18 @@ p {
     
 }
 
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .cript {
     color: var(--cyan);
     font-family: "Outfit 400";
 }
 
 .time {
-    float: right;
+    
 }
 
 hr {
@@ -87,7 +92,9 @@ hr {
 }
 
 .profile {
-    float: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .profile-text {
