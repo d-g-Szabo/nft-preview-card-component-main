@@ -34,6 +34,7 @@ body {
     min-height: 100vh;
     font-size: 18px;
     font-family: "Outfit 300";
+    color: var(--softBlue);
 }
 
 main {
@@ -50,8 +51,12 @@ img {
 }
 
 .avatar {
+    /* Border 
     border-style:solid;
     color:var(--white);
+    */
+    /* box-shadow is a Better border, not pushing content */
+    box-shadow: 0 0 0 1px var(--white);
     border-radius: 100%;
     width: 12%;
     object-fit: contain;
@@ -63,7 +68,7 @@ h1 {
 }
 
 p {
-    color: var(--softBlue);
+    
 }
 
 .cript {
@@ -72,17 +77,25 @@ p {
 }
 
 .time {
-    color: var(--softBlue);
-    text-align: right;
+    float: right;
 }
 
-.sign {
-    color: var(--softBlue);
+hr {
+    border: 1px solid var(--line);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile {
+    float: center;
+}
+
+.profile-text {
+    
 }
 
 footer { 
     font-size: 11px; text-align: center; 
-    color: var(--softBlue);
 }
 
 footer a { 
