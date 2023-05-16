@@ -1,6 +1,7 @@
 :root {
     --softBlue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
+    --cyanTransparent: hsla(178, 100%, 50%, 0.473);
     --mainBG: hsl(217, 54%, 11%);
     --cardBG: hsl(216, 50%, 16%);
     --line: hsl(215, 32%, 27%);
@@ -45,9 +46,22 @@ main {
     box-shadow: 0px 25px 80px #0a0a0a8c;
 }
 
-img {
+.nft-img {
     max-width: 100%;
     border-radius: 3%;
+    
+}
+
+.nft-view {
+    position:absolute;
+    top: 12.05rem;
+    width: 18.9rem;
+    height: 18.9rem;
+    border-radius: 3%;
+}
+
+.nft-view:hover {
+    background: var(--cyanTransparent) url(/images/icon-view.svg) no-repeat center center;
 }
 
 .avatar {
