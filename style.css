@@ -61,7 +61,7 @@ main {
 }
 
 .nft-view:hover {
-    background: var(--cyanTransparent) url(/images/icon-view.svg) no-repeat center center;
+    background: var(--cyanTransparent) url(./images/icon-view.svg) no-repeat center center;
 }
 
 .avatar {
