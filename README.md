@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://d-g-szabo.github.io/nft-preview-card-component-main/design/screenshot.jpg)
+![](https://d-g-szabo.github.io/nft-preview-card-component-main/images/screenshot.jpg)
 
 ### Links
 
