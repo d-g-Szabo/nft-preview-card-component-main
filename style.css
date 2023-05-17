@@ -1,3 +1,7 @@
+/*
+    Colour variables declared and assigned
+*/
+
 :root {
     --softBlue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
@@ -8,11 +12,19 @@
     --white: hsl(0, 0%, 100%);
 }
 
+/*
+    Base css properties reseted
+*/
+
 * {
     /*margin: 0;*/
     padding: 0;
     box-sizing: border-box;
 }
+
+/*
+    Font and different its different weights added
+*/
 
 @font-face {
     font-family: "Outfit 300";
@@ -28,12 +40,16 @@
     src: url(./font/Outfit-SemiBold.ttf);
 }
 
+/*
+    Body centered with Grid
+*/
+
 body {
-    background-color: var(--mainBG);
     display: grid;
     place-content: center;
     min-height: 100vh;
     font-size: 18px;
+    background-color: var(--mainBG);
     font-family: "Outfit 300";
     color: var(--softBlue);
 }
@@ -48,13 +64,22 @@ main {
 
 .nft-img {
     max-width: 100%;
-    border-radius: 3%;
-    
+    border-radius: 3%;      /* This makes the edges smooth */
+}
+
+/*
+    To ensure the "nft-view" div is on top of the "nft-img" img, one has to use "position:absolute".
+    To make them stay together when the screen size is different, one has to make the "nft-all" "position:relative" because the "absolute" attribute search for a "relative" parent,
+    if one fails to add a "relative" parent, the absolute "div" will position itself to the "body".
+*/
+
+.nft-all {
+    position: relative;
 }
 
 .nft-view {
     position:absolute;
-    top: 12.05rem;
+    top: 0;     /* Reassign the distance from the "top" of the parent "section" to "0" so it will overlap the parent, which we want to achieve because it is a "view hover div". */
     width: 18.9rem;
     height: 18.9rem;
     border-radius: 3%;
@@ -69,8 +94,7 @@ main {
     border-style:solid;
     color:var(--white);
     */
-    /* box-shadow is a Better border, not pushing content */
-    box-shadow: 0 0 0 1px var(--white);
+    box-shadow: 0 0 0 1px var(--white);     /* box-shadow is a Better border, it is not pushing content but overlap them */
     border-radius: 100%;
     width: 12%;
     object-fit: contain;
@@ -85,6 +109,9 @@ h1:hover {
     color: var(--cyan);
 }
 
+/*
+    A "section" container for the Crypto price and the time "span" which is Flex, so they are next to each other.
+*/
 
 .flexbox-container {
     display: flex;
@@ -102,6 +129,10 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+/*
+    A "section" container for the avatar and the profile-text "span" which is Flex, so they are next to each other.
+*/
 
 .profile {
     display: flex;
@@ -122,7 +153,8 @@ hr {
 }
 
 footer { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
 }
 
 footer a { 
