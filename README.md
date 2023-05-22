@@ -64,7 +64,7 @@ const proudOfThisFunc = () => {
 
 ### Continued development
 
-I have to find a good solution to make the :hoover on pictures in this style as good as possible.
+To learn positions, Flex and Grid throughout.
 
 ### Useful resources
 
